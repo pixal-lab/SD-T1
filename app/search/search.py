@@ -139,6 +139,7 @@ if __name__ == '__main__':
         print("1. JSON Search")
         print("2. Cache Search")
         print("3. Memcached Search")
+        print("4. Exit")
         option = input("Enter your choice: ")
 
         if option == "1" or option == "2":
@@ -164,7 +165,6 @@ if __name__ == '__main__':
                 break
             else:
                 print("Invalid choice. Try again.")
-                break
 
         elif option == "3":
             client = MemClient()
@@ -188,7 +188,8 @@ if __name__ == '__main__':
                 break
             else:
                 print("Invalid choice. Try again.")
-                break   
+        elif choice == "4":
+            print("Goodbye!")
+            break
         else:
             print("Invalid choice.")
-            break
